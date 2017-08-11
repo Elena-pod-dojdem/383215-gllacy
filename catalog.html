@@ -34,20 +34,22 @@
 						<a href="#" class="buy">корзина</a>
 					</div>
 					<div class="inner-popap-basket is-hidden">
-						<div class="inner-popap-item">
-							<img src="" alt="">
-							<p class="inner-popap-description">Пломбир с апельсиновым джемом</p>
-							<p class="inner-netto">1,5 кг х 200 руб.</p>
-							<p class="price">300 руб.</p>
+						<div class="popap-container">
+							<div class="inner-popap-item">
+								<img src="" alt="">
+								<div class="inner-popap-description">Пломбир с апельсиновым джемом</p>
+								<div class="inner-netto">1,5 кг х 200 руб.</p>
+								<p class="price">300 руб.</p>
+							</div>
+							<div class="inner-popap-item">
+								<img src="" alt="">
+								<div class="inner-popap-description">Клубничный пломбир с присыпкой из белого шоколада</p>
+								<div class="inner-netto">1,5 кг х 300 руб.</p>
+								<p class="price">400 руб.</p>
+							</div>
+							<p class="in-order">Итого: 750руб.</p>
+							<button class="inner-popap-button">Оформить заказ</button>
 						</div>
-						<div class="inner-popap-item">
-							<img src="" alt="">
-							<p class="inner-popap-description">Клубничный пломбир с присыпкой из белого шоколада</p>
-							<p class="inner-netto">1,5 кг х 300 руб.</p>
-							<p class="price">400 руб.</p>
-						</div>
-						<p class="in-order">Итого: 750руб.</p>
-						<button class="inner-popap-button">Оформить заказ</button>
 					</div>
 				</div>
 				<div class="header-information">
@@ -56,7 +58,7 @@
 				</div>
 			</div>
 		</header>
-		<inner-main class="inner-main-container">
+		<main class="inner-container">
 			<div class="inner-breadcrumbs">
 				<a href="#">Главная</a>
 				<a href="#">Каталог</a>
@@ -88,14 +90,14 @@
 					<h3 class="fat-content-text">Жирность:</h3>
 					<div class="radio-buttons-container">
 						<fieldset class="fat-content-grid">
-							<label for=""></label>
-							<input type="radio" class="0-percent">0%
-							<label for=""></label>
-							<input type="radio" class="10-percent" checked>до 10%
-							<label for=""></label>
-							<input type="radio" class="30-persent">до 30%
-							<label for=""></label>
-							<input type="radio" class="more-30-percent">выше 30%
+							<label for="percent"></label>
+							<input type="radio" id="percent"class="0-percent">0%
+							<label for="percent"></label>
+							<input type="radio" id="percent" class="10-percent" checked>до 10%
+							<label for="percent"></label>
+							<input type="radio" id="percent" class="30-persent">до 30%
+							<label for="percent"></label>
+							<input type="radio" id="percent" class="more-30-percent">выше 30%
 						</fieldset>
 					</div>
 				<div class="stuffing-block">
@@ -118,67 +120,67 @@
 						</label>	
 					</fieldset>
 				</div>
-				<button class="apply">Применить</button>
+				<button type="submit" class="apply">Применить</button>
 			</div>
 			<div class="goods-container">
 				<section class="goods-item">
 					<img src="" alt="ice-cream">
-					<p class="goods-item-price">310 /кг</p>
+					<p class="goods-item-price">310₽/кг</p>
 					<div class="goods-item-text">Сливочное с апельсиновым джемом и цитрусовой стружкой</div>
 				</section>
 				<section class="goods-item">
 					<img src="" alt="">
-					<p class="goods-item-price">380 /кг</p>
+					<p class="goods-item-price">380₽/кг</p>
 					<div class="goods-item-text">Сливочно-кофейное с кусочками шоколада</div>
 				</section>
 				<section class="goods-item">
 					<img src="" alt="">
-					<p class="goods-item-price">355 /кг</p>
+					<p class="goods-item-price">355₽/кг</p>
 					<div class="goods-item-text">Сливочно-клубничное с присыпкой из белого шоколада</div>
 				</section>
 				<section class="goods-item">
 					<img src="" alt="">
-					<p class="goods-item-price">415 /кг</p>
+					<p class="goods-item-price">415₽/кг</p>
 					<div class="goods-item-text">Сливочное крем-брюле с карамельной подливкой</div>
 				</section>
 				<section class="goods-item">
 					<img src="" alt="">
-					<p class="goods-item-price">325 /кг</p>
+					<p class="goods-item-price">325₽/кг</p>
 					<div class="goods-item-text">Сливочное с брусничным джемом</div>
 				</section>
 				<section class="goods-item">
 					<img src="" alt="">
-					<p class="goods-item-price">410 /кг</p>
+					<p class="goods-item-price">410₽/кг</p>
 					<div class="goods-item-text">Сливочно-черничное с цельными ягодами черники </div>
 				</section>
 				<section class="goods-item">
 					<img src="" alt="">
-					<p class="goods-item-price">375 /кг</p>
+					<p class="goods-item-price">375₽/кг</p>
 					<div class="goods-item-text">Сливочно-лимонное с карамельной присыпкой</div>
 				</section>
 				<section class="goods-item">
 					<img src="" alt="">
-					<p class="goods-item-price">320 /кг</p>
+					<p class="goods-item-price">320₽/кг</p>
 					<div class="goods-item-text">Сливочное с шоколадной стружкой</div>
 				</section>
 				<section class="goods-item">
 					<img src="" alt="">
-					<p class="goods-item-price">440 /кг</p>
+					<p class="goods-item-price">440₽/кг</p>
 					<div class="goods-item-text">Сливочно-ванильное с кусочками шоколада</div>
 				</section>
 				<section class="goods-item">
 					<img src="" alt="">
-					<p class="goods-item-price">435 /кг</p>
+					<p class="goods-item-price">435₽/кг</p>
 					<div class="goods-item-text">Сливочноe с ментоловым сиропом</div>
 				</section>
 				<section class="goods-item">
 					<img src="" alt="">
-					<p class="goods-item-price">355 /кг</p>
+					<p class="goods-item-price">355₽/кг</p>
 					<div class="goods-item-text">Сливочное с кусочками черного шоколада</div>
 				</section>
 				<section class="goods-item">
 					<img src="" alt="">
-					<p class="goods-item-price">420 /кг</p>
+					<p class="goods-item-price">420₽/кг</p>
 					<div class="goods-item-text">Сливочное с мятным сиропом</div>
 				</section>
 			</div>
