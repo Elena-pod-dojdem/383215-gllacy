@@ -11,7 +11,7 @@
 					<img src="" alt="">
 				</div>
 				<div class="main-menu">
-					<a href="#">Каталог</a>
+					<a href="#">Каталог</a> <!--Разделы меню лучше сделать ссылками или лишками?-->
 						<ul class="new is-hidden">Новинки
 							<li>Сливочное</li>
 							<li>Щербеты</li>
@@ -40,7 +40,7 @@
 						<a href="#" class="buy">корзина</a>
 					</div>
 				</div>
-				<div class="header-information">
+				<div class="header-information"><!--"Хедер залазит на блок, который ниже. Как правильнее это оформить?-->
 					<p class="time">С 10 до 20, ежедневно</p>
 					<p class="telephone">8 812 450-25-25</p>
 				</div>
@@ -59,15 +59,29 @@
 						<div class="slide-text">
 							<div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
 							<a href="" class="btn">Давайте оба!</a>
-							<div class="slide-popup">
-								<h2 class="slide-popup-title">Мы обязательно вам ответим!</h2>
-								<input type="text" placeholder="Как вас зовут?">
-								<input type="text" placeholder="Ваша почта для ответа?">
-								<input type="text" placeholder="Напишите что-нибудь...">
-								<button class="submit">Отправить</button>
-							</div>
+						</div>
+					</div>
+					<div class="slide">
+						<div class="slide-text is-hidden"><!--Все скрытые элементы пока что обозначила классом is-hidden.-->
+							<div class="slide-title">Шоколадный пломбир
+							и лимонный сорбет</div>
+							<a href="" class="btn">Давайте оба!</a>
 						</div>
 					</div>	
+					<div class="slide">
+						<div class="slide-text is-hidden">
+							<div class="slide-title">Пломбир с помадкой
+							и клубничный щербет</div>
+							<a href="" class="btn">Давайте оба!</a>
+						</div>
+					</div>		
+				</div>
+				<div class="slide-popup is-hidden">
+					<h2 class="slide-popup-title">Мы обязательно вам ответим!</h2>
+					<input type="text" placeholder="Как вас зовут?">
+					<input type="text" placeholder="Ваша почта для ответа?">
+					<input type="text" placeholder="Напишите что-нибудь...">
+					<button class="submit">Отправить</button>
 				</div>
 			</div>
 		</header>
@@ -88,7 +102,7 @@
 					<div class="photo">
 						<img src="" alt="">
 					</div>	
-						<p class="popular-goods-price">310 /кг</p>
+						<p class="popular-goods-price">310 /кг</p><!--Рубль вставить фоном или значком в контенте? Думаю, лучше фоном.-->
 						<p class="popular-goods-description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
 				</div>
 				<div class="popular-goods-container">
@@ -151,7 +165,7 @@
 					<a href="#" class="social-btn">vkontakte</a>
 				</div>
 				<div class="footer-menu">
-					<a href="#">Для поставщиков</a>
+					<a href="#">Для поставщиков</a><!--В макете этот пункт отмечен сердечком. Это стиль активного пункта меню? В стайлгайде это не указано.-->
 					<a href="#">О производстве</a>
 					<a href="#">Наши документы</a>
 					<a href="#">Экологические стандарты</a>
