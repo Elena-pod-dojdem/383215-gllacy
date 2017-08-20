@@ -139,8 +139,12 @@ body {
 
 }
 
-.new .active {
+.new li:active {
     background-color: #F6B5A5;
+}
+
+.new .active {
+    background-color: #D07058;
 }
 
 .catalog:hover  ~ .is-hidden {
