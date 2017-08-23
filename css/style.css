@@ -479,7 +479,6 @@ body > input[type="radio"]{
 }
 
 .main-container {
-    outline:  red solid thin;
     width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
@@ -925,13 +924,11 @@ body > input[type="radio"]{
 
 .footer {
     width: auto;
-    outline: red solid thin;
 }
 
 .footer-container {
     width: 1200px;
     margin: 0 auto;
-    outline: blue solid thin;
 }
 
 .footer-social {
@@ -940,7 +937,6 @@ body > input[type="radio"]{
     margin-top: 36px;
     margin-left: 28px;
     vertical-align: top;
-    outline: red solid thin;
 }
 
 .social-btn {
@@ -993,19 +989,20 @@ body > input[type="radio"]{
 }
 
 .footer-menu {
+    position: relative;
     float: left;
-    width: 315px;
-    margin-left: 132px;
+    width: 370px;
+    margin-left: 133px;
     margin-top: 31px;
-    outline: green solid thin;
+    padding-left: 20px;
 }
 
 .footer-menu a {
     display: inline-block;
+    min-width: 140px;
     font-size: 13px;
     line-height: 18px;
     color: #fff;
-    padding-left: 25px;
     text-decoration: none;
 }
 
@@ -1013,12 +1010,35 @@ body > input[type="radio"]{
     font-weight: bold;
 }
 
+.footer-menu .active-link::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/spritesheet.png");
+    width: 15px;
+    height: 13px;
+    top: 6px;
+    left: 1px;
+    background-position: -77px -94px;
+}
+
 .footer-made-in {
     float: right;
     width: 200px;
-    margin-left: 300px;
-    outline: red solid thin;
+    margin-right: 17px;
 }
+
+.footer-made-in img {
+    margin-top: 18px;
+    margin-left: 2px;
+}
+
+.made-in-description {
+    font-size: 12px;
+    line-height: 18px;
+    color: #fff;
+    margin-top: 0;
+}
+
 
 
 
