@@ -1,15 +1,3 @@
-@font-face {
-    font-family: "Roboto-Medium";
-    src:url("../fonts/web/robotomedium.woff");
-        font-weight: normal;
-}
-
-@font-face {
-    font-family: "Roboto-Bold";
-    src:url("../fonts/web/robotobold.woff");
-        font-weight: bold;
-}
-
 html, body {
     margin: 0;
     padding: 0;
@@ -39,6 +27,7 @@ body > input[type="radio"]{
 .site-wrapper {
     width: auto;
     margin: 0 auto;
+    outline: red solid thin;
     background-color: #849d8f;
     background-repeat: no-repeat;
     background-position: 33% -1px;
@@ -173,16 +162,468 @@ body > input[type="radio"]{
 }
 
 /*Окончание стилей слайдера */
-.main-header{
-    margin-bottom: 50px; /*временное свойство*/
+
+/*Начало стилей внутренней страницы*/
+.inner-body {
+
+    font-family: "Roboto", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #000;
+    outline: red solid thin;
+    background-color: #849d8f;
 }
 
-.clearfix::after {
+.inner-content-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    outline: yellow solid thin;
+}
+
+.inner-header {
+    display: flex;
+    flex-wrap: wrap;
+    outline: pink solid thin;
+}
+
+.inner-container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    outline: purple solid thin;
+}
+
+.inner-menu {
+    display: flex;
+    margin-left: 11px;
+    height: 55px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    outline: orange solid thin;
+}
+
+.inner-menu a {
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 16px 6px 11px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.inner-menu span {
+    border-bottom: 1px solid #B1C9BC;
+}
+
+.inner-menu > .active {
+    color: #fff;
+    background-color: #D07058;
+    border-radius: 20px;
+    border-bottom: none;
+}
+
+.inner-menu a:hover {
+    background-color: #F7F6F3;
+    color: #000;
+    border-radius: 20px;
+}
+
+.inner-menu a:hover .inner-menu span {
+   border-bottom: none;
+}
+
+.inner-menu a:active {
+    background-color: #F7F6F3;
+    color: #000;
+    border-radius: 20px;
+    padding: 7px 9px 6px 10px;
+    border-top: 2px solid #696969;
+}
+
+.inner-logo {
+    display: flex;
+    height: 72px;
+    align-items: flex-end;
+}
+
+.inner-user-block {
+    display: flex;
+    margin-left: 346px;
+    height: 56px;
+    
+}
+
+.inner-user-container {
+    display: flex;
+    align-items: flex-end;
+    outline: red solid thin;
+}
+
+.inner-search {
+    font-size: 0;
+}
+
+.inner-search-link {
+    font-size: 0;
+}
+
+.inner-search-link svg {
+    width: 23px;
+    height: 26px;
+    fill: #fff;
+    background-color: #A1B4A9;
+    padding: 8px 2px 0 9px;
+    border-radius: 50%;
+    outline: red solid thin;
+
+}
+
+.inner-search-link:hover svg {
+    background-color:#F8F7F4;
+    fill: #000000;
+} 
+
+.log-in {
+    display: flex;
+    margin-left: 7px;
+    padding-right: 20px;
+    border-radius: 18px;
+    background-color: #9DB1A5;
+    color: #fff;
+}
+
+.log-in span {
+    padding-left: 8px;
+    padding-top: 8px;
+    font-family: "Roboto Medium";
+    font-size: 14px;
+    line-height: 16px;
+
+}
+
+.log-in svg {
+    fill: #fff;
+    padding-left: 16px;
+    height: 34px;
+    width: 20px;
+}
+
+/*.log-in:hover {
+    position: relative;
+    background-color: #F8F7F4;
+    color: #000;
+    width: 50px;
+    padding: 6px 0px 8px 45px;
+   
+}
+
+.log-in:hover::before {
+    position: absolute;
     content: "";
-    display: table;
-    clear: both;
+    background-image: url("../img/spritesheet.png");
+    width: 21px;
+    height: 19px;
+    background-position: -263px -143px;
 }
 
+.popup-block {
+    display: none;
+}
+
+.popup-block {
+    position: absolute;
+    width: 270px;
+    border-radius: 5px;
+    background-color: #F8F7F4;
+    top: 36px;
+    right: 141px;
+    padding: 15px 0px 20px 6px;
+}
+
+.popup-block input {
+    display: block;
+    width: 208px;
+    border-radius: 5px;
+    border: 1px solid #D3D3D2;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    margin-left: 12px;
+    padding: 11px 16px 14px 15px;
+}
+
+.popup-block .log-in-link {
+    float: left;
+    width: 52px;
+    padding: 11px 25px;
+    margin-left: 12px;
+    margin-top: 0;
+    text-align: center;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+    background-image: linear-gradient(#F16642, #E74C36);
+}
+
+.popup-block a {
+    float: left;
+    color: #000;
+    font-size: 14px;
+    margin: 4px 0px 1px 19px;
+}
+
+.log-in:hover ~ .popup-block {
+    display: block;
+}*/
+
+.inner-basket {
+    display: flex;
+    margin-left: 10px;
+    border-radius: 18px;
+    background-color: #F7F6F3;
+    
+}
+
+.inner-basket .buy {
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+   
+}
+
+.buy svg {
+    padding-left: 15px;
+    height: 33px;
+    width: 20px;
+}
+
+.inner-basket span {
+    padding-left: 8px;
+    padding-top: 7px;
+    padding-right: 16px;
+    font-weight: bold;
+}
+
+.basket {
+    position: absolute;
+    content: "";
+    background-image: url("../img/spritesheet.png");
+    width: 21px;
+    height: 20px;
+    background-position: -15px -15px;
+    top: 5px;
+    left: 14px;
+}
+
+.inner-basket:hover .inner-popap-basket {
+    display: block;
+}
+
+.inner-popap-basket {
+    display: flex;
+    position: absolute;
+    top: 56px;
+    right: 122px;
+    border-radius: 5px;
+    width: 545px;
+    background-color: #F8F7F4;
+    margin-top: 5px;
+}
+
+.popap-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    outline: blue solid thin;
+}
+
+.inner-popap-item {
+    display: flex;
+    outline: black solid thin;
+}
+
+.popap-container .inner-popap-item:nth-of-type(2){
+    margin-top: -7px;
+}
+
+.inner-popap-item img {
+    padding: 16px 9px 0px 43px;
+}
+
+.inner-popap-description {
+    position: relative;
+    width: 220px;
+    margin-top: 21px;
+    outline: red solid thin;
+}
+
+.inner-popap-description::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 15px;
+    left: -69px;
+    top: 12px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+.inner-popap-description::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 15px;
+    left: -70px;
+    top: 12px;
+    background-color: #000;
+    transform: rotate(-45deg);
+}
+
+.inner-popap-description,
+.inner-netto,
+.inner-price,
+.price {
+    font-size: 13px;
+    line-height: 16px;
+    font-family: "Roboto";
+    padding: 5px 5px 5px 5px;
+}
+
+.inner-popap-description span {
+    font-weight: bold;
+}
+
+.inner-netto {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+.inner-price {
+    margin-left: -5px;
+    margin-top: 21px;
+}
+
+.price {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 22px;
+    margin: 0 auto;
+    outline: brown solid thin;
+}
+
+.in-order {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: 2px;
+    margin-top: 13px;
+}
+
+.inner-popap-button {
+    padding: 9px 13px;
+    margin-left: 337px;
+    font-size: 18px;
+    line-height: 24px;
+    width: 173px;
+    color: #fff;
+    text-decoration: none;
+    background: #f26843;
+    background: -moz-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+    border-radius: 100px;
+    border: none;  
+}
+
+.inner-popap-button:hover {
+    background: -moz-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+.inner-popap-button:active {
+    background: -moz-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: -webkit-linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+}
+
+
+
+
+.header-wrapper {
+    display: flex;
+}
+
+.breadcrumbs-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.inner-breadcrumbs {
+    display: flex;
+    margin-top: 25px;
+}
+.information-wrapper {
+    display: flex;
+    outline: green solid thin;
+}
+
+.header-information {
+    display: flex;
+    outline: yellow solid thin;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 200px;
+    margin-left:741px;
+    margin-right: 30px;
+    color: #fff;
+}
+
+.header-information .time {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    margin-top: -1px;
+    padding: 0px 0px 0px 26px;
+    outline: red solid thin;
+
+}
+
+.header-information .telephone {
+    font-size: 22px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-top: -8px;
+    outline: pink solid thin;
+    padding: 0px 0px 0px 9px;
+}
+
+.is-hidden {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/*
 .logo {
     float: left;
     margin-top: 9px;
@@ -190,6 +631,7 @@ body > input[type="radio"]{
 
 .main-menu {
     float: left;
+    width: 490px;
     margin-left: 10px;
     margin-top: 28px;
     vertical-align: top;
@@ -207,32 +649,33 @@ body > input[type="radio"]{
     padding: 7px 9px 6px 10px;
     font-weight: bold;
     font-size: 16px;
-    border-bottom: 1px solid #B1C9BC;
+    line-height: 18px;
+    border-radius: 20px;
 }
 
 .main-menu a:hover {
     background-color: #F7F6F3;
     color: #000;
-    border-radius: 20px 20px 20px 20px;
-    padding: 7px 9px 6px 10px;
+}
+
+.main-menu span {
+    border-bottom: 1px solid #B1C9BC;
+}
+
+.main-menu a:hover .main-menu span {/*почему селектор не работает?*/
+ /*   border-bottom: none;
 }
 
 .main-menu a:active {
     background-color: #F7F6F3;
     color: #000;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
     padding: 7px 9px 6px 10px;
     border-top: 2px solid #696969;
 }
 
-.main-menu > .active {
-    color: #fff;
-    background-color: #D07058;
-    border-radius: 20px;
-    border-bottom: none;
-}
-
 .new {
+    display: none;
     position: absolute;
     list-style: none;
     width: 143px;
@@ -242,7 +685,6 @@ body > input[type="radio"]{
     margin-left: -8px;
     margin-top: 12px;
     border-radius: 5px;
-
 }
 
 .new li:first-child {
@@ -276,9 +718,10 @@ body > input[type="radio"]{
     color: #fff;
 }
 
-.catalog:hover  ~ .is-hidden {
+.catalog:hover .new {
     display: block;
-}
+
+} 
 
 .user-block {
     position: relative;
@@ -656,12 +1099,13 @@ body > input[type="radio"]{
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-.features-block {
-    background-image: url("../img/waffle-background.png");
-    background-repeat: no-repeat;
+.features {
+    background-image: url("../img/waffle-pattern.png");
+    background-repeat: repeat;
     margin-top: -37px;
     margin-left: 5px;
     padding: 20px 0 22px 20px;
+    border-radius: 20px;
     
 }
 
@@ -688,7 +1132,7 @@ body > input[type="radio"]{
     vertical-align: top;
 }
 
-.features-block .ice-cream::before {
+.features .ice-cream::before {
     position: absolute;
     content: "";
     background-image: url("../img/spritesheet.png");
@@ -700,7 +1144,7 @@ body > input[type="radio"]{
     left: 0px;
 }
 
-.features-block .cow::before {
+.features .cow::before {
     position: absolute;
     content: "";
     background-image: url("../img/spritesheet.png");
@@ -712,7 +1156,7 @@ body > input[type="radio"]{
     left: 0px;
 }
 
-.features-block .leaf::before {
+.features .leaf::before {
     position: absolute;
     content: "";
     background-image: url("../img/spritesheet.png");
@@ -724,7 +1168,7 @@ body > input[type="radio"]{
     left: 0px;
 }
 
-.features-block .thermometer::before {
+.features .thermometer::before {
     position: absolute;
     content: "";
     background-image: url("../img/spritesheet.png");
@@ -766,7 +1210,7 @@ body > input[type="radio"]{
     margin-bottom: 56px;
 }
 
-.subscribe-block {
+.subscribe {
     display: inline-block;
     background-image: url("../img/envelope.png");
     background-repeat: no-repeat;
@@ -775,13 +1219,13 @@ body > input[type="radio"]{
     padding: 20px 0 22px 20px;
 }
 
-.subscribe-block-text {
+.subscribe-text {
     width: 510px;
     margin-top: 12px;
     margin-left: 6px;
 }
 
-.subscribe-block input {
+.subscribe input {
     width: 352px;
     padding: 12px 0 11px 13px;
     margin: 1px 0 20px 7px;
@@ -790,7 +1234,7 @@ body > input[type="radio"]{
     border: 1px solid #D3D3D2;
 }
 
-.subscribe-block .btn {
+.subscribe .btn {
     padding: 9px 14px;
     margin-left: 9px;
     letter-spacing: 1px;
@@ -1041,5 +1485,5 @@ body > input[type="radio"]{
 
 
 
-
+*/
 

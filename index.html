@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>HTML Academy: Глейси</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -13,11 +14,11 @@
         <div class="site-wrapper">
             <div class="content-wrapper">
                 <header class="main-header clearfix">
-                    <div class="logo">
+                    <a class="logo">
                        <img src="img/logo.png" alt="logo">
-                    </div>
+                    </a>
                     <div class="main-menu">
-                        <a href="#" class="catalog active">Каталог</a> 
+                        <a href="#" class="catalog"><span>Каталог<span</a> 
                             <ul class="new is-hidden">
                                 <li>Новинки</li>
                                 <li>Сливочное</li>
@@ -25,8 +26,8 @@
                                 <li>Фруктовый лед</li>
                                 <li>Мелорин</li>
                             </ul>
-                        <a href="#">Доставка и оплата</a>
-                        <a href="#">О компании</a>
+                        <a href="#"><span>Доставка и оплата</span></a>
+                        <a href="#"><span>О компании</span></a>
                     </div>
                     <div class="user-block clearfix">
                         <div class="search">поиск
@@ -129,7 +130,7 @@
                         <a href="#" class="popular-btn">Быстрый просмотр</a>
                     </div>
                 </div>
-                <section class="features-block">
+                <section class="features">
                     <div class="features-title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</div>
                     <p class="feature-topic ice-cream">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                     <p class="feature-topic cow">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
@@ -141,10 +142,12 @@
                         <p class="new-info-title">Новое в нашем блоге</p>
                         <a href="#" class="new-info-link">10 способов сервировки фруктовых щербетов к столу</a>
                     </section>
-                    <section class="subscribe-block">
-                        <p class="subscribe-block-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-                        <input type="text" placeholder="Электронная почта">
-                        <button class="btn">Отправить</button>
+                    <section class="subscribe">
+                        <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+                        <form action="form.php" class="form">
+                            <input type="text" placeholder="Электронная почта">
+                            <button class="btn">Отправить</button>
+                        </form>
                     </section>
                 </div>
             </main>    
