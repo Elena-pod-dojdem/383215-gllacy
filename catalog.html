@@ -76,8 +76,8 @@
 				</div>	
 				<div class="breadcrumbs-container">
 					<div class="inner-breadcrumbs">
-						<a href="#">Главная</a>
-						<a href="#">Каталог</a>
+						<a href="#"><span>Главная</span></a>
+						<a href="#"><span>Каталог</span></a>
 						<a href="#">Сливочное</a>
 					</div>
 					<div class="header-information">
@@ -87,42 +87,47 @@
 				</div>	
 			</header>
 			<main class="inner-container">
-				<div class="inner-sorting-block">
+				<div class="inner-sorting">
 					<h1 class="inner-sorting-title">Сливочное мороженое</h1>
 					<div class="sorting-block">
 						<div class="sorting">
-							<ul class="popular is-hidden">
-								<li>по популярности</li>
-								<li>сначала недорогие</li>
-								<li>сначала дорогие</li>
-								<li>по жирности</li>
+							<h3>Сортировка:</h3>
+							<ul class="popular">
+								<li>по популярности
+									<svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5"><path fill="#FFF" d="M4.5 5L0 0h9z"/></svg>
+								</li>
+								<li class=" is-hidden">сначала недорогие</li>
+								<li class=" is-hidden">сначала дорогие</li>
+								<li class=" is-hidden">по жирности</li>
 							</ul>
 						</div>
-					</div>
-					<div class="inner-range-filter">
-						<p class="range-filter-text">Цена: 100 руб. – 500 руб.</p>
-						<div class="range-filter">
-							<div class="range-controls">
-								<div class="scale"><div style="width:70%" class="bar"></div></div>
-								<div class="toggle min-toggle"></div>
-								<div class="toggle max-toggle"></div>
+					    <div class="inner-range-filter">
+							<p class="range-filter-text">Цена: 100 руб. – 500 руб.</p>
+							<div class="range-filter">
+								<svg class="first-toggle" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
+								<svg class="second-toggle" xmlns="http://www.w3.org/2000/svg" width="20" height="23" viewBox="0 0 20 23"><path opacity=".3" fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z"/><circle fill="#FFF" cx="10" cy="10" r="10"/><circle fill="#ABABAB" cx="10" cy="10" r="2"/></svg>
+							</div>
+						</div>	
+						<div class="fat-content">
+							<h3 class="fat-content-title">Жирность:</h3>
+							<div class="radio-buttons-container">
+								<div class="fat-content-grid">
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>
+									<label for="percent">0%</label>
+									<input type="radio" id="percent">
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/><circle fill="#FFFFFF" cx="12.5" cy="12.5" r="4.5"/></svg>
+									<label for="percent">до 10%</label>
+									<input type="radio" id="percent">
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>
+									<label for="percent">до 30%</label>
+									<input type="radio" id="percent">
+									<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"><path fill="#FFFFFF" d="M12.5 4c4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5C7.813 21 4 17.187 4 12.5 4 7.813 7.813 4 12.5 4m0-4C5.597 0 0 5.597 0 12.5S5.597 25 12.5 25 25 19.403 25 12.5 19.403 0 12.5 0z"/></svg>
+									<label for="percent">выше 30%</label>
+									<input type="radio" id="percent">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="fat-content">
-						<h3 class="fat-content-text">Жирность:</h3>
-						<div class="radio-buttons-container">
-							<fieldset class="fat-content-grid">
-								<label for="percent"></label>
-								<input type="radio" id="percent"class="0-percent">0%
-								<label for="percent"></label>
-								<input type="radio" id="percent" class="10-percent" checked>до 10%
-								<label for="percent"></label>
-								<input type="radio" id="percent" class="30-persent">до 30%
-								<label for="percent"></label>
-								<input type="radio" id="percent" class="more-30-percent">выше 30%
-							</fieldset>
-						</div>
+					</div>		
 					<div class="stuffing-block">
 						<h3 class="stuffing-title">Наполнители</h3>
 						<fieldset class="stuffing-block-field">
@@ -214,7 +219,7 @@
        		    	<a href="#4">4</a>
        		    	<a href="#5">5</a>
        		    </div>
-			</inner-main>
+			</main>
 			<footer class="footer">
 				<div class="footer-container">
 					<div class="footer-social">
