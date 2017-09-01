@@ -30,7 +30,7 @@ body > input[type="radio"]{
     outline: red solid thin;
     background-color: #849d8f;
     background-repeat: no-repeat;
-    background-position: 33% -1px;
+    background-position: 46% -8px;
     transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -49,36 +49,46 @@ body > input[type="radio"]{
 }
 
 .content-wrapper {
-    width: 1200px;
+    outline: yellow solid thin;
+    width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
 
 }
 /*Начало стилей слайдера*/
 .slider {
+    outline: green solid thin;
     position: relative;
-    padding-top: 257px;
+    padding-top: 242px;
     line-height: 1.1;
     text-align: center;
     color: #fff;
 }
 
+.title-container {
+    display: flex;
+    width: 1160px;
+    align-items: center;
+    flex-direction: column;
+}
+
 .slide-title {
-    width: 700px;
-    margin: 0 auto;
+    outline: white solid thin;
+    width: 685px;
+    margin-left: -14px;
     margin-bottom: 27px;
     font-weight: 700;
     font-size: 58px;
+    letter-spacing: 1px;
 }
 
 .slide-btn {
-    display: inline-block;
-    padding: 10px 43px;
-    margin-right: 43px;
+    outline: yellow solid thin;
+    padding: 10px 42px;
+    margin-right: 14px;
     font-weight: 600;
     font-size: 31px;
     line-height: 41px;
-    vertical-align: top;
     color: #fff;
     text-decoration: none;
     text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
@@ -105,14 +115,15 @@ body > input[type="radio"]{
 }
 
 .slider-controls {
+    outline: yellow solid thin;
     position: absolute;
-    bottom: 18px;
-    left: 4;
+    bottom: 21px;
     z-index: 20;
     font-size: 0;
 }
 
 .slider-controls label {
+    outline: white solid thin;
     display: inline-block;
     width: 17px;
     height: 17px;
@@ -285,7 +296,7 @@ body > input[type="radio"]{
     fill: #000000;
 } 
 
-.log-in {
+.inner-log-in {
     display: flex;
     margin-left: 7px;
     padding-right: 20px;
@@ -294,7 +305,7 @@ body > input[type="radio"]{
     color: #fff;
 }
 
-.log-in span {
+.inner-log-in span {
     padding-left: 8px;
     padding-top: 8px;
     font-family: "Roboto Medium";
@@ -303,7 +314,7 @@ body > input[type="radio"]{
 
 }
 
-.log-in svg {
+.inner-log-in svg {
     fill: #fff;
     padding-left: 16px;
     height: 34px;
@@ -408,17 +419,6 @@ body > input[type="radio"]{
     font-weight: bold;
 }
 
-.basket {
-    position: absolute;
-    content: "";
-    background-image: url("../img/spritesheet.png");
-    width: 21px;
-    height: 20px;
-    background-position: -15px -15px;
-    top: 5px;
-    left: 14px;
-}
-
 .inner-basket:hover .inner-popap-basket {
     display: block;
 }
@@ -434,7 +434,7 @@ body > input[type="radio"]{
     margin-top: 5px;
 }
 
-.popap-container {
+.inner-popap-container {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -446,7 +446,7 @@ body > input[type="radio"]{
     outline: black solid thin;
 }
 
-.popap-container .inner-popap-item:nth-of-type(2){
+.inner-popap-container .inner-popap-item:nth-of-type(2){
     margin-top: -7px;
 }
 
@@ -508,7 +508,7 @@ body > input[type="radio"]{
     margin-top: 21px;
 }
 
-.price {
+.common-price {
     margin-top: 20px;
     margin-left: 20px;
 }
@@ -560,7 +560,7 @@ body > input[type="radio"]{
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-.header-wrapper {
+.inner-header {
     display: flex;
 }
 
@@ -603,7 +603,7 @@ body > input[type="radio"]{
     outline: green solid thin;
 }
 
-.header-information {
+.inner-shedule {
     display: flex;
     outline: yellow solid thin;
     justify-content: flex-start;
@@ -613,7 +613,7 @@ body > input[type="radio"]{
     color: #fff;
 }
 
-.header-information .time {
+.inner-shedule .time {
     font-size: 14px;
     line-height: 16px;
     font-weight: bold;
@@ -623,7 +623,7 @@ body > input[type="radio"]{
 
 }
 
-.header-information .telephone {
+.inner-shedule .telephone {
     font-size: 22px;
     line-height: 24px;
     font-weight: bold;
@@ -659,7 +659,7 @@ body > input[type="radio"]{
 
 }
 
-.sorting-block {
+.sorting-container {
     display: flex;
     outline: white solid thin;
 }
@@ -1023,20 +1023,20 @@ body > input[type="radio"]{
     padding: 5px 0px 0px 1px;
 }
 
-.inner-made-in {
+.made-in-card {
     display: flex;
     margin-right: 12px;
     outline: yellow solid thin;
     flex-direction: column;
 }
 
-.inner-made-in svg {
+.made-in-card svg {
     height: 40px;
     width: 105px;
     margin-left: 80px;
 }
 
-.made-in-description {
+.inner-made-in {
     outline: blue solid thin;
     color: #DDE4E0;
     font-size: 12px;
@@ -1044,35 +1044,48 @@ body > input[type="radio"]{
     margin-top: 5px;
 }
 
-.link-htmlacademy {
+.inner-link-htmlacademy {
     text-decoration: none;
     color: #DDE4E0;
     border-bottom: 1px solid #B1C9BC;
+} 
+/*Конец стилей внутренней страницы*/
+
+.main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 1160px;
+    margin: 0 auto;
+    outline: purple solid thin;
 }
 
+.wrapper {
+    outline: gold solid thin;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1160px;
+}
 
+.info-wrapper {
+    display: flex;
+    justify-content: space-between;
+    outline: purple solid thin;
+}
 
-
-
-
-
-
-
-
-
-
-/*
 .logo {
-    float: left;
-    margin-top: 9px;
+    outline: red solid thin;
+    margin-top: 8px;
+    margin-right: 13px;
 }
 
 .main-menu {
-    float: left;
-    width: 490px;
-    margin-left: 10px;
-    margin-top: 28px;
-    vertical-align: top;
+    display: flex;
+    outline: blue solid thin;
+    margin-right: 339px;
+    margin-top: 16px;
 }
 
 .is-hidden {
@@ -1080,11 +1093,11 @@ body > input[type="radio"]{
 }
 
 .main-menu a {
-    position: relative;
-    display: inline;
+    outline: pink solid thin;
     color: #fff;
     text-decoration: none;
-    padding: 7px 9px 6px 10px;
+    padding: 7px 9px 6px 11px;
+    margin-right: 7px;
     font-weight: bold;
     font-size: 16px;
     line-height: 18px;
@@ -1101,7 +1114,7 @@ body > input[type="radio"]{
 }
 
 .main-menu a:hover .main-menu span {/*почему селектор не работает?*/
- /*   border-bottom: none;
+    border-bottom: none;
 }
 
 .main-menu a:active {
@@ -1162,39 +1175,34 @@ body > input[type="radio"]{
 } 
 
 .user-block {
-    position: relative;
-    float: right;
-    width: 277px;
-    height: 60px;
-    margin-top: 23px;
-    margin-right: 37px;
+    display: flex;
+    outline: gold solid thin;
+    width: 276px;
+    margin-top: 14px;
 }
 
 .search {
-    float: left;
+    outline: yellow solid thin;
     font-size: 0;
 }
 
 .search-link {
-    float: left;
+    outline: red solid thin;
     font-size: 0;
-    width: 32px;
-    height: 32px;
-    background-color: #A1B5AA;
-    background-image: url("../img/spritesheet.png");
-    background-position: -306px -178px;
-    border-radius: 50%;
 }
 
-.search-link:hover {
-    width: 32px;
-    height: 32px;
-    background-color: #F8F7F4;
-    background-image: url("../img/spritesheet.png");
-    background-position: -354px -178px;
-} 
+.search-link svg {
+    width: 23px;
+    height: 26px;
+    fill: #fff;
+    background-color: #A1B4A9;
+    padding: 8px 2px 0 9px;
+    border-radius: 50%;
+    outline: red solid thin;
+}
 
 .search-block {
+    outline: white solid thin;
     display: none;
 }
 
@@ -1202,15 +1210,9 @@ body > input[type="radio"]{
     display: block;
 }
 
-.search-block {
-    position: absolute;
-    width: 326px;
-    height: 69px;
-    background-color: #F8F7F4;
-    top: 36px;
-    right: 244px;
-    border-radius: 5px;
-    padding: 15px 0px 0px 15px;
+.search {
+    outline: blue solid thin;
+    
 }
 
 .search-block input {
@@ -1222,42 +1224,29 @@ body > input[type="radio"]{
 }
 
 .log-in {
-    position: relative;
-    float: left;
-    margin-left: 10px;
-    width: 50px;
+    outline: yellow solid thin;
+    display: flex;
+    margin-left: 9px;
+    padding-right: 20px;
     border-radius: 18px;
-    padding: 6px 0px 8px 45px;
     background-color: #9DB1A5;
     color: #fff;
 }
 
-.log-in::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icons/log-in.png");
-    width: 21px;
-    height: 19px;
-    top: 6px;
-    left: 16px;
+.log-in span {
+    padding-left: 8px;
+    padding-top: 8px;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
 }
 
-.log-in:hover {
-    position: relative;
-    background-color: #F8F7F4;
-    color: #000;
-    width: 50px;
-    padding: 6px 0px 8px 45px;
-   
-}
-
-.log-in:hover::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/spritesheet.png");
-    width: 21px;
-    height: 19px;
-    background-position: -263px -143px;
+.log-in svg {
+    fill: #fff;
+    padding-left: 16px;
+    height: 34px;
+    width: 20px;
 }
 
 .popup-block {
@@ -1312,101 +1301,130 @@ body > input[type="radio"]{
 }
 
 .basket {
-    position: relative;
-    float: left;
-    margin-left: 10px;
-    width: 50px;
+    display: flex;
+    margin-left: 7px;
+    padding-right: 17px;
     border-radius: 18px;
-    padding: 6px 21px 8px 43px;
     background-color: #9DB1A5;
     
 }
 
-.basket a {
+.basket .buy {
+    display: flex;
     text-decoration: none;
     color: #fff;
+    font-size: 14px;
+   
 }
 
-.basket::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/spritesheet.png");
-    width: 21px;
-    height: 20px;
-    background-position: -15px -15px;
-    top: 5px;
-    left: 14px;
+.buy svg {
+    fill: #fff;
+    padding-left: 15px;
+    height: 33px;
+    width: 20px;
 }
 
-.header-information {
-    float: right;
+.basket span {
+    padding-left: 8px;
+    padding-top: 7px;
+    padding-right: 16px;
+    font-weight: 600;
+}
+
+
+.info-wrapper {
+    outline: yellow solid thin;
+    display: flex;
+    justify-content: flex-end;
+    width: 1160px;
+}
+
+.shedule {
+    display: flex;
+    outline: yellow solid thin;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 189px;
+    margin-left: 737px;
     color: #fff;
 }
 
-.header-information .time {
+.info-wrapper .time {
     font-size: 14px;
-    line-height: 24px;
-    margin: 0;
-    padding: 12px 5px 0px 28px;
-
+    line-height: 16px;
+    font-weight: bold;
+    margin-top: -5px;
+    padding: 0px 15px 0px 20px;
+    outline: red solid thin;
 }
 
-.header-information .telephone {
+.info-wrapper .telephone {
+    outline: green solid thin;
     font-size: 22px;
     line-height: 24px;
     font-weight: bold;
-    margin: 0;
-    padding: 0px 21px 5px 15px;
-}
+    margin-top: -8px;
+    padding: 0px 9px 0px 5px;
+}    
 
 .main-container {
-    width: 1200px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 1160px;
     padding: 0 20px;
+    margin: 0 auto;
+    outline: yellow solid thin;
 }
 
 .offers-container {
+    display: flex;
+    outline: white solid thin;
     padding-top: 42px;
 }
 
 .offer-card {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    outline: green solid thin;
     width: 560px;
     border-radius: 15px;
     margin-right: 15px;
-    margin-left: 5px;
     padding-bottom: 23px;
 }
 
 .offers-container .raspberry {
+    outline: gold solid thin;
     background-image: url("../img/raspberry.jpg");
     background-repeat: no-repeat;
 }
 
 .offers-container .chocolate {
+    margin-left: 11px;
+    outline: pink solid thin;
     background-image: url("../img/chocolate.jpg");
     background-repeat: no-repeat;
 }
 
 .offer-title {
-    display: inline-block;
+    outline: orange solid thin;
     font-size: 35px;
     line-height: 41px;
     font-weight: bold;
     color: #fff;
-    margin: 15px 0 20px 18px;
+    margin: 17px 0px 0px 18px;
 }
 
 .offer-text {
-    display: inline-block;
+    outline: yellow solid thin;
     font-size: 18px;
     line-height: 22px;
-    margin: 15px 0 23px 20px;
+    margin: 15px 0 43px 19px;
     color: #fff;
 }
 
 .offer-btn {
-    float: right;
+    outline: red solid thin;
+    align-self: flex-end;
     padding: 12px 24px;
     margin-right: 19px;
     font-size: 18px;
@@ -1438,36 +1456,39 @@ body > input[type="radio"]{
 }
 
 .popular-goods {
-    display: inline-block;
+    outline: yellow solid thin;
+    display: flex;
     margin-top: 30px;
+   
 }
 
 .photo {
-    padding-top: 11px;
-    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    outline: white solid thin;
+}
+
+.photo .hit {
+    align-self: flex-start;
+    padding-top: 10px;
+    position: absolute;
 }
 
 .photo > img {
     border-radius: 50%;
-}
-
-.photo::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/popular.png");
-    background-repeat: no-repeat;
-    width: 61px;
-    height: 61px;
-    top: 10px;
-    left: 6px;
+    padding-top: 10px;
 }
 
 .popular-goods-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 293px;
+    border-radius: 50%;
     position: relative;
-    display: inline-block;
-    width: 292px;
-    margin-right: -4px;
-
+    padding-bottom: 30px;
+    padding-right: 26px;
+    outline: white solid thin;
 }
 
 .popular-goods-container:hover {
@@ -1481,26 +1502,36 @@ body > input[type="radio"]{
 }
 
 .popular-goods-price {
+    outline: white solid thin;
     position: absolute;
-    display: inline-block;
+    top: 168px;
     color: #fff;
-    bottom: 95px;
-    left: 5px;
-    font-weight: bold;
     font-size: 45px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.popular-goods-price span {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .popular-goods-description {
-    display: inline-block;
+    align-self: center;
     color: #fff;
-    text-align: center;
-    margin-top: 3px;
-    padding-bottom: 64px;
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.popular-goods-description span {
+    border-bottom: 1px solid #B1C9BC;
 }
 
 .popular-btn {
+    outline: pink solid thin;
     position: absolute;
-    float: right;
     bottom: 23px;
     padding: 9px 14px;
     margin-left: 40px;
@@ -1538,107 +1569,76 @@ body > input[type="radio"]{
 }
 
 .features {
-    background-image: url("../img/waffle-pattern.png");
-    background-repeat: repeat;
-    margin-top: -37px;
-    margin-left: 5px;
-    padding: 20px 0 22px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    justify-content: space-around;
+    width: 1149px;
+    outline: green solid thin;
+    background-image: url("../img/waffle-background.png");
+    background-repeat: no-repeat;
     border-radius: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 39px;
     
 }
 
 .features-title {
-    display: block;
-    width: 1120px;
+    outline: red solid thin;
     font-size: 24px;
     line-height: 30px;
     font-weight: bold;
-    padding-top: 5px;
+    padding-top: 23px;
+    padding-left: 19px;
 
 }
 
 .feature-topic {
-    position: relative;
-    display: inline-block;
-    width: 504px;
-    padding-left: 56px;
+    outline: pink solid thin;
+    width: 456px;
     font-size: 16px;
     line-height: 22px;
     font-weight: 600;
-    margin-bottom: 2px;
-    margin-top: 22px;
-    vertical-align: top;
+    margin: 24px 13px 2px 0px;
+    padding-left: 50px;
 }
 
-.features .ice-cream::before {
+.features img {
+    outline: purple solid thin;
     position: absolute;
-    content: "";
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    width: 49px;
-    height: 49px;
-    background-position: -122px -94px;
-    top: -12px;
-    left: 0px;
+    margin-top: -14px;
+    margin-left: -55px;
 }
 
-.features .cow::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    width: 49px;
-    height: 49px;
-    background-position: -210px -15px;
-    top: -12px;
-    left: 0px;
-}
-
-.features .leaf::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    width: 49px;
-    height: 49px;
-    background-position: -15px -156px;
-    top: -14px;
-    left: 0px;
-}
-
-.features .thermometer::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    width: 49px;
-    height: 49px;
-    background-position:  -224px -232px;
-    top: -14px;
-    left: 0px;
-}
-
-.info-wrapper {
-    margin-top: 39px;
-
+.info-container {
+    outline: yellow solid thin;
+    display: flex;
+    justify-content: flex-start;
+    width: 1160px;
 }
 
 .new-info {
+    outline: green solid thin;
     display: inline-block;
     background-image: url("../img/strawberry-background.png");
     background-repeat: no-repeat;
     width: 540px;
     vertical-align: top;
-    margin-left: 5px;
-    margin-right: 16px;
+   
+    margin-right: 22px;
     padding: 4px 0 25px 20px;
 }
 
 .new-info-title {
-    margin-bottom: 6px;
+    outline: purple solid thin;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 .new-info-link {
+    outline: blue solid thin;
     display: inline-block;
     width: 308px;
     font-size: 24px;
@@ -1649,6 +1649,7 @@ body > input[type="radio"]{
 }
 
 .subscribe {
+    outline: yellow solid thin;
     display: inline-block;
     background-image: url("../img/envelope.png");
     background-repeat: no-repeat;
@@ -1658,12 +1659,16 @@ body > input[type="radio"]{
 }
 
 .subscribe-text {
+    outline: skyblue solid thin;
     width: 510px;
     margin-top: 12px;
     margin-left: 6px;
+    font-size: 16px;
+    line-height: 22px;
 }
 
 .subscribe input {
+    outline: brown solid thin;
     width: 352px;
     padding: 12px 0 11px 13px;
     margin: 1px 0 20px 7px;
@@ -1673,6 +1678,7 @@ body > input[type="radio"]{
 }
 
 .subscribe .btn {
+    outline: red solid thin;
     padding: 9px 14px;
     margin-left: 9px;
     letter-spacing: 1px;
@@ -1690,6 +1696,7 @@ body > input[type="radio"]{
 }
 
 .map-block {
+    outline: red solid thin;
     width: auto;
     position: relative;
     margin-top: 40px;
@@ -1697,38 +1704,33 @@ body > input[type="radio"]{
 
 .map {
     width: 100%;
-
 }
 
-.map-block::before {
+.map-marker {
+    outline: brown solid thin;
     position: absolute;
-    content: "";
-    background-image: url("../img/spritesheet.png");
-    background-repeat: no-repeat;
-    width: 80px;
-    height: 140px;
-    background-position: -314px -15px;
-    top: 170px;
-    left: 300px;
+    top: 171px;
+    left: 304px;
 }
 
 .contacts-container {
+    outline: green solid thin;
     position: absolute;
-    float: left;
     width: 305px;
     background-color: #fff;
     border-radius: 20px;
     top: 61px;
-    right: 116px;
+    right: 106px;
 }
 
 .contacts-wrapper {
-    display: inline-block;
+    outline: purple solid thin;
     padding-left: 25px;
+    padding-bottom: 42px;
 }
 
 .contacts-container .contacts-text {
-    display: inline-block;
+    outline: brown solid thin;
     font-size: 14px;
     line-height: 20px;
     width: 157px;
@@ -1737,7 +1739,7 @@ body > input[type="radio"]{
 }
 
 .contacts-adress {
-    display: inline-block;
+    outline: red solid thin;
     width: 260px;
     font-size: 18px;
     line-height: 24px;
@@ -1747,15 +1749,16 @@ body > input[type="radio"]{
 }
 
 .contacts-note {
-    display: inline-block;
+    outline: black solid thin;
     font-size: 14px;
     line-height: 20px;
     width: 175px;
     margin-bottom: 6px;
+    margin-top: 18px;
 }
 
 .contacts-container .telephone {
-    display: inline-block;
+    outline: brown solid thin;
     width: 260px;
     font-size: 18px;
     line-height: 22px;
@@ -1765,19 +1768,18 @@ body > input[type="radio"]{
 }
 
 .comment {
-    display: inline-block;
+    outline: yellow solid thin;
     font-size: 14px;
     line-height: 20px;
     width: 160px;
-    margin-bottom: 24px;
+    margin-bottom: 35px;
     margin-top: 0;
 }
 
 .feedback {
-    display: inline-block;
+    outline: green solid thin;
     padding: 9px 31px;
     line-height: 24px;
-    vertical-align: top;
     color: #fff;
     margin-bottom: 32px;
     text-decoration: none;
@@ -1805,123 +1807,98 @@ body > input[type="radio"]{
 }
 
 .footer {
-    width: auto;
-}
-
-.footer-container {
-    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    padding: 0 20px;
     margin: 0 auto;
+    margin-top: -7px;
+    border-top: 1px solid #A9BBB1;
+    padding-top: 18px;
+    outline: purple solid thin;
 }
 
 .footer-social {
-    float: left;
-    width: 265px;
-    margin-top: 36px;
-    margin-left: 28px;
-    vertical-align: top;
+    outline: gold solid thin;
+    display: flex;
+    justify-content: space-around;
+    outline: skyblue solid thin;
+    width: 195px;
+    padding-top: 12px;
+    margin-left: 9px;
 }
 
-.social-btn {
-    float: left;
-    width: 35px;
-    height: 35px;
-    margin-right: 14px;
-    vertical-align: middle;
-    border: 2px solid #C2CEC7;
-    border-radius: 50%;
+.footer-social a {
     font-size: 0;
 }
 
-.social-btn:hover {
+.footer-social svg {
+    fill: #E6EBE9;
+    border: 2px solid #C2CEC7;
+    border-radius: 50%;
+    margin-top: 7px;
+}
+
+.footer-social svg:hover {
+    fill: #fff;
     border-color: #DAE2DE;
 }
 
-.social-btn:active {
-    background-color: #E9E9E9;
-    border-color: #D0D9D4;
-    background-color: transparent;
-}
-
-.social-btn-twitter {
-    background-image: url("../img/spritesheet.png");
-    width: 32px;
-    height: 32px;
-    background-position: -303px -232px;
-}
-
-.social-btn-instagram {
-    background-image: url("../img/spritesheet.png");
-    width: 32px;
-    height: 32px;
-    background-position: -201px -94px;
-}
-
-.social-btn-facebook {
-    background-image: url("../img/spritesheet.png");
-    width: 32px;
-    height: 32px;
-    background-position: -15px -94px;
-}
-
-.social-btn-vkontakte {
-    background-image: url("../img/spritesheet.png");
-    width: 32px;
-    height: 32px;
-    background-position: -15px -294px;
+.footer-social svg:active {
+    fill: #E9E9E9;
+    border-color: #DAE2DE;
 }
 
 .footer-menu {
-    position: relative;
-    float: left;
-    width: 370px;
-    margin-left: 133px;
-    margin-top: 31px;
-    padding-left: 20px;
+    outline: pink solid thin;
+    width: 338px;
+    max-height: 50px;
+    margin-left: -15px;
+    padding-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .footer-menu a {
-    display: inline-block;
-    min-width: 140px;
+    outline: yellow solid thin;
     font-size: 13px;
-    line-height: 18px;
     color: #fff;
     text-decoration: none;
+    padding: 5px 0px 0px 23px;
 }
 
-.footer-menu .active-link {
+.footer-menu .active {
     font-weight: bold;
 }
 
-.footer-menu .active-link::before {
-    content: "";
+.footer-menu svg {
     position: absolute;
-    background-image: url("../img/spritesheet.png");
-    width: 15px;
-    height: 13px;
-    top: 6px;
-    left: 1px;
-    background-position: -77px -94px;
+    padding: 5px 0px 0px 1px;
 }
 
 .footer-made-in {
-    float: right;
-    width: 200px;
-    margin-right: 17px;
+    display: flex;
+    margin-right: 2px;
+    outline: yellow solid thin;
+    flex-direction: column;
 }
 
-.footer-made-in img {
-    margin-top: 18px;
-    margin-left: 2px;
+.footer-made-in svg {
+    height: 40px;
+    width: 105px;
 }
 
-.made-in-description {
+.made-in-text {
+    outline: blue solid thin;
+    color: #DDE4E0;
     font-size: 12px;
-    line-height: 18px;
-    color: #fff;
-    margin-top: 0;
+    line-height: 16px;
+    margin-top: 5px;
 }
 
-
-
-*/
-
+.link-htmlacademy {
+    text-decoration: none;
+    color: #DDE4E0;
+    border-bottom: 1px solid #B1C9BC;
+} 
