@@ -1,16 +1,6 @@
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    width: auto;
-    height: auto;   
-    
-}
-
 body {
     width: auto;
+    padding: 0;
     margin: 0 auto;
     height: auto;
     font-family: "Roboto", "Arial", sans-serif;
@@ -27,10 +17,9 @@ body > input[type="radio"]{
 .site-wrapper {
     width: auto;
     margin: 0 auto;
-    outline: red solid thin;
     background-color: #849d8f;
     background-repeat: no-repeat;
-    background-position: 46% -8px;
+    background-position: 46% 0px;
     transition: background-image 0.5s ease, background-color 0.5s ease;
 }
 
@@ -49,7 +38,6 @@ body > input[type="radio"]{
 }
 
 .content-wrapper {
-    outline: yellow solid thin;
     width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
@@ -57,9 +45,8 @@ body > input[type="radio"]{
 }
 /*Начало стилей слайдера*/
 .slider {
-    outline: green solid thin;
     position: relative;
-    padding-top: 242px;
+    padding-top: 130px;
     line-height: 1.1;
     text-align: center;
     color: #fff;
@@ -73,7 +60,6 @@ body > input[type="radio"]{
 }
 
 .slide-title {
-    outline: white solid thin;
     width: 685px;
     margin-left: -14px;
     margin-bottom: 27px;
@@ -83,7 +69,6 @@ body > input[type="radio"]{
 }
 
 .slide-btn {
-    outline: yellow solid thin;
     padding: 10px 42px;
     margin-right: 14px;
     font-weight: 600;
@@ -115,7 +100,6 @@ body > input[type="radio"]{
 }
 
 .slider-controls {
-    outline: yellow solid thin;
     position: absolute;
     bottom: 21px;
     z-index: 20;
@@ -123,7 +107,6 @@ body > input[type="radio"]{
 }
 
 .slider-controls label {
-    outline: white solid thin;
     display: inline-block;
     width: 17px;
     height: 17px;
@@ -176,13 +159,11 @@ body > input[type="radio"]{
 
 /*Начало стилей внутренней страницы*/
 .inner-body {
-
     font-family: "Roboto", "Arial", sans-serif;
     font-style: normal;
     font-size: 18px;
     line-height: 1.2;
     color: #000;
-    outline: red solid thin;
     background-color: #849d8f;
 }
 
@@ -190,19 +171,17 @@ body > input[type="radio"]{
     width: 1160px;
     margin: 0 auto;
     padding: 0 20px;
-    outline: yellow solid thin;
 }
 
 .inner-header {
     display: flex;
     flex-wrap: wrap;
-    outline: pink solid thin;
 }
 
-.inner-header {
+.inner-wrapper {
+    display: flex;
     width: 1160px;
     margin: 0 auto;
-    outline: purple solid thin;
 }
 
 .inner-menu {
@@ -211,7 +190,6 @@ body > input[type="radio"]{
     height: 55px;
     justify-content: flex-start;
     align-items: flex-end;
-    outline: orange solid thin;
 }
 
 .inner-menu a {
@@ -224,7 +202,7 @@ body > input[type="radio"]{
     line-height: 18px;
 }
 
-.inner-menu span {
+.inner-menu .border-bottom {
     border-bottom: 1px solid #B1C9BC;
 }
 
@@ -241,8 +219,8 @@ body > input[type="radio"]{
     border-radius: 20px;
 }
 
-.inner-menu a:hover .inner-menu span {
-   border-bottom: none;
+.inner-menu a:hover .border-bottom {
+    border-bottom: none;
 }
 
 .inner-menu a:active {
@@ -269,7 +247,6 @@ body > input[type="radio"]{
 .inner-user-container {
     display: flex;
     align-items: flex-end;
-    outline: red solid thin;
 }
 
 .inner-search {
@@ -287,8 +264,6 @@ body > input[type="radio"]{
     background-color: #A1B4A9;
     padding: 8px 2px 0 9px;
     border-radius: 50%;
-    outline: red solid thin;
-
 }
 
 .inner-search-link:hover svg {
@@ -311,7 +286,7 @@ body > input[type="radio"]{
     font-family: "Roboto Medium";
     font-size: 14px;
     line-height: 16px;
-
+    font-weight: 600;
 }
 
 .inner-log-in svg {
@@ -321,89 +296,24 @@ body > input[type="radio"]{
     width: 20px;
 }
 
-/*.log-in:hover {
-    position: relative;
-    background-color: #F8F7F4;
-    color: #000;
-    width: 50px;
-    padding: 6px 0px 8px 45px;
-   
-}
-
-.log-in:hover::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/spritesheet.png");
-    width: 21px;
-    height: 19px;
-    background-position: -263px -143px;
-}
-
-.popup-block {
-    display: none;
-}
-
-.popup-block {
-    position: absolute;
-    width: 270px;
-    border-radius: 5px;
-    background-color: #F8F7F4;
-    top: 36px;
-    right: 141px;
-    padding: 15px 0px 20px 6px;
-}
-
-.popup-block input {
-    display: block;
-    width: 208px;
-    border-radius: 5px;
-    border: 1px solid #D3D3D2;
-    margin-top: 6px;
-    margin-bottom: 20px;
-    margin-left: 12px;
-    padding: 11px 16px 14px 15px;
-}
-
-.popup-block .log-in-link {
-    float: left;
-    width: 52px;
-    padding: 11px 25px;
-    margin-left: 12px;
-    margin-top: 0;
-    text-align: center;
-    border-radius: 30px;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: 24px;
-    color: #fff;
-    background-image: linear-gradient(#F16642, #E74C36);
-}
-
-.popup-block a {
-    float: left;
-    color: #000;
-    font-size: 14px;
-    margin: 4px 0px 1px 19px;
-}
-
-.log-in:hover ~ .popup-block {
-    display: block;
-}*/
-
 .inner-basket {
     display: flex;
+    height: 34px;
     margin-left: 10px;
     border-radius: 18px;
     background-color: #F7F6F3;
-    
 }
 
-.inner-basket .buy {
+.inner-basket-container {
+    padding-bottom: 30px;
+    height: 34px;
+}
+
+.inner-basket-container .buy {
     display: flex;
     text-decoration: none;
     color: #000;
     font-size: 14px;
-   
 }
 
 .buy svg {
@@ -412,19 +322,19 @@ body > input[type="radio"]{
     width: 20px;
 }
 
-.inner-basket span {
+.inner-basket-container span {
     padding-left: 8px;
     padding-top: 7px;
     padding-right: 16px;
     font-weight: bold;
 }
 
-.inner-basket:hover .inner-popap-basket {
+.inner-basket-container:hover .inner-popap-basket {
     display: block;
 }
 
 .inner-popap-basket {
-    display: flex;
+    display: none;
     position: absolute;
     top: 56px;
     right: 122px;
@@ -438,12 +348,10 @@ body > input[type="radio"]{
     display: flex;
     width: 100%;
     flex-direction: column;
-    outline: blue solid thin;
 }
 
 .inner-popap-item {
     display: flex;
-    outline: black solid thin;
 }
 
 .inner-popap-container .inner-popap-item:nth-of-type(2){
@@ -458,7 +366,6 @@ body > input[type="radio"]{
     position: relative;
     width: 220px;
     margin-top: 21px;
-    outline: red solid thin;
 }
 
 .inner-popap-description::before {
@@ -518,7 +425,6 @@ body > input[type="radio"]{
     flex-direction: column;
     padding-bottom: 22px;
     margin: 0 auto;
-    outline: brown solid thin;
 }
 
 .in-order {
@@ -560,10 +466,6 @@ body > input[type="radio"]{
     box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
 }
 
-.inner-header {
-    display: flex;
-}
-
 .breadcrumbs-container {
     display: flex;
     justify-content: space-between;
@@ -600,12 +502,10 @@ body > input[type="radio"]{
 
 .information-wrapper {
     display: flex;
-    outline: green solid thin;
 }
 
 .inner-shedule {
     display: flex;
-    outline: yellow solid thin;
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 189px;
@@ -619,8 +519,6 @@ body > input[type="radio"]{
     font-weight: bold;
     margin-top: -1px;
     padding: 0px 0px 0px 26px;
-    outline: red solid thin;
-
 }
 
 .inner-shedule .telephone {
@@ -628,7 +526,6 @@ body > input[type="radio"]{
     line-height: 24px;
     font-weight: bold;
     margin-top: -8px;
-    outline: pink solid thin;
     padding: 0px 0px 0px 9px;
 }
 
@@ -641,13 +538,11 @@ body > input[type="radio"]{
     flex-direction: column;
     width: 1160px;
     margin: 0 auto;
-    outline: yellow solid thin;
 }
 
 .inner-sorting {
     display: flex;
     flex-direction: column;
-    outline: brown solid thin;
 }
 
 .inner-sorting-title {
@@ -656,16 +551,13 @@ body > input[type="radio"]{
     color: #fff;
     margin-top: -20px;
     margin-bottom: 0px;
-
 }
 
 .sorting-container {
     display: flex;
-    outline: white solid thin;
 }
 
 .sorting {
-    outline: red solid thin;
     display: flex;
     flex-direction: column;
 }
@@ -704,7 +596,6 @@ body > input[type="radio"]{
 }
 
 .inner-range-filter  {
-    outline:  pink solid thin;
     margin-left: 13px;
 }
 
@@ -760,7 +651,6 @@ body > input[type="radio"]{
 }
 
 .fat-content  {
-    outline:  green solid thin;
     margin-left: 13px;
 }
 
@@ -809,7 +699,6 @@ body > input[type="radio"]{
     display: flex;
     flex-direction: column;
     margin-bottom: 38px;
-    outline: red solid thin;
 }
 
 .stuffing-title {
@@ -866,7 +755,6 @@ body > input[type="radio"]{
     flex-wrap: wrap;
     width: 1172px;
     margin-bottom: 43px;
-    outline: skyblue solid thin;
 }
 
 .goods-item {
@@ -877,7 +765,6 @@ body > input[type="radio"]{
     border-radius: 50%;
     position: relative;
     padding-bottom: 30px;
-    outline: white solid thin;
 }
 
 .goods-item .goods-item-price {
@@ -909,7 +796,6 @@ body > input[type="radio"]{
 
 .paginator {
     width: 200px;
-    outline: red solid thin;
     display: flex;
     justify-content: flex-start;
     align-self: flex-end;
@@ -963,13 +849,11 @@ body > input[type="radio"]{
     margin-top: 34px;
     border-top: 1px solid #A9BBB1;
     padding-top: 18px;
-    outline: purple solid thin;
 }
 
 .inner-footer-social {
     display: flex;
     justify-content: space-around;
-    outline: skyblue solid thin;
     width: 195px;
     padding-top: 12px;
 }
@@ -996,7 +880,6 @@ body > input[type="radio"]{
 }
 
 .inner-footer-menu {
-    outline: red solid thin;
     width: 338px;
     max-height: 50px;
     margin-left: -15px;
@@ -1004,7 +887,6 @@ body > input[type="radio"]{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
 }
 
 .inner-footer-menu a {
@@ -1026,18 +908,15 @@ body > input[type="radio"]{
 .made-in-card {
     display: flex;
     margin-right: 12px;
-    outline: yellow solid thin;
     flex-direction: column;
 }
 
 .made-in-card svg {
     height: 40px;
     width: 105px;
-    margin-left: 80px;
 }
 
 .inner-made-in {
-    outline: blue solid thin;
     color: #DDE4E0;
     font-size: 12px;
     line-height: 16px;
@@ -1058,11 +937,10 @@ body > input[type="radio"]{
     align-items: center;
     width: 1160px;
     margin: 0 auto;
-    outline: purple solid thin;
+    padding-bottom: 120px;
 }
 
 .wrapper {
-    outline: gold solid thin;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -1072,20 +950,18 @@ body > input[type="radio"]{
 .info-wrapper {
     display: flex;
     justify-content: space-between;
-    outline: purple solid thin;
 }
 
 .logo {
-    outline: red solid thin;
     margin-top: 8px;
-    margin-right: 13px;
 }
 
 .main-menu {
     display: flex;
-    outline: blue solid thin;
-    margin-right: 339px;
-    margin-top: 16px;
+    width: 380px;
+    margin-right: 331px;
+    margin-top: 23px;
+    padding-bottom: 20px;
 }
 
 .is-hidden {
@@ -1093,11 +969,9 @@ body > input[type="radio"]{
 }
 
 .main-menu a {
-    outline: pink solid thin;
     color: #fff;
     text-decoration: none;
-    padding: 7px 9px 6px 11px;
-    margin-right: 7px;
+    padding: 7px 14px 6px 14px;
     font-weight: bold;
     font-size: 16px;
     line-height: 18px;
@@ -1109,11 +983,11 @@ body > input[type="radio"]{
     color: #000;
 }
 
-.main-menu span {
+.border-bottom {
     border-bottom: 1px solid #B1C9BC;
 }
 
-.main-menu a:hover .main-menu span {/*почему селектор не работает?*/
+.main-menu a:hover .border-bottom {
     border-bottom: none;
 }
 
@@ -1133,8 +1007,8 @@ body > input[type="radio"]{
     padding: 0;
     background-color: #F7F6F3;
     color: #000;
-    margin-left: -8px;
-    margin-top: 12px;
+    left: 250px;
+    top: 40px;
     border-radius: 5px;
 }
 
@@ -1144,6 +1018,7 @@ body > input[type="radio"]{
     padding-bottom: 11px;
     font-weight: bold;
 }
+
 .new li:last-child {
     padding-bottom: 12px;
 }
@@ -1157,7 +1032,6 @@ body > input[type="radio"]{
 .new li:hover {
     background-color: #FBDED8;
     border-radius: 5px;
-
 }
 
 .new li:active {
@@ -1170,83 +1044,108 @@ body > input[type="radio"]{
 }
 
 .catalog:hover .new {
-    display: block;
-
+   display: block;
 } 
 
 .user-block {
     display: flex;
-    outline: gold solid thin;
     width: 276px;
-    margin-top: 14px;
+    margin-top: 23px;
 }
 
 .search {
-    outline: yellow solid thin;
-    font-size: 0;
+    position: relative;
 }
 
 .search-link {
-    outline: red solid thin;
     font-size: 0;
+    padding-bottom: 30px;
 }
 
 .search-link svg {
-    width: 23px;
+    width: 19px;
     height: 26px;
     fill: #fff;
     background-color: #A1B4A9;
-    padding: 8px 2px 0 9px;
+    padding: 8px 8px 0 11px;
     border-radius: 50%;
-    outline: red solid thin;
 }
 
-.search-block {
-    outline: white solid thin;
-    display: none;
+.search:hover svg {
+    fill: #000;
+    background-color: #F8F7F4;
 }
 
-.search:hover ~ .search-block {
+.search:hover .search-block {
     display: block;
 }
 
-.search {
-    outline: blue solid thin;
-    
+.search-block {
+    display: none;
+    position: absolute;
+    top: 44px;
+    right: 3px;
+    background-color: #F8F7F4;
+    border-radius: 5px;
 }
 
 .search-block input {
     width: 280px;
     border-radius: 5px;
     border: 1px solid #D3D3D2;
-    margin-top: 6px;
-    padding: 10px 16px 14px 13px;
+    margin: 19px 15px 19px 14px;
+    padding: 8px 16px 9px 13px;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .log-in {
-    outline: yellow solid thin;
     display: flex;
+    height: 34px;
     margin-left: 9px;
-    padding-right: 20px;
     border-radius: 18px;
     background-color: #9DB1A5;
     color: #fff;
 }
 
-.log-in span {
-    padding-left: 8px;
-    padding-top: 8px;
+.log-in-container {
+    height: 34px;
+    padding-bottom: 30px;
+    padding-right: 17px;
+}
+
+.log-in-container span {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 6px;
+    padding-top: 7px;
     font-family: "Roboto";
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
 }
 
-.log-in svg {
+.log-in-container svg {
     fill: #fff;
-    padding-left: 16px;
-    height: 34px;
+    padding-left: 11px;
+    padding-top: 6px;
     width: 20px;
+}
+
+.log-in:hover {
+    background-color: #F8F7F4;
+}
+
+.log-in-container:hover span {
+    color: #000;
+}
+
+.log-in-container:hover svg {
+    fill: #000;
+}
+
+.log-in-container:hover .popup-block {
+    display: block;
 }
 
 .popup-block {
@@ -1258,29 +1157,31 @@ body > input[type="radio"]{
     width: 270px;
     border-radius: 5px;
     background-color: #F8F7F4;
-    top: 36px;
-    right: 141px;
-    padding: 15px 0px 20px 6px;
+    top: 63px;
+    right: 235px;
+    padding: 20px 0px 19px 6px;
 }
 
 .popup-block input {
     display: block;
     width: 208px;
     border-radius: 5px;
+    color: #999999;
     border: 1px solid #D3D3D2;
-    margin-top: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     margin-left: 12px;
-    padding: 11px 16px 14px 15px;
+    padding: 11px 16px 8px 15px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #999;
 }
 
 .popup-block .log-in-link {
-    float: left;
     width: 52px;
-    padding: 11px 25px;
+    float: left;
+    padding: 11px 23px;
     margin-left: 12px;
-    margin-top: 0;
-    text-align: center;
+    margin-top: 1px;
     border-radius: 30px;
     text-decoration: none;
     font-size: 18px;
@@ -1290,19 +1191,21 @@ body > input[type="radio"]{
 }
 
 .popup-block a {
-    float: left;
-    color: #000;
-    font-size: 14px;
-    margin: 4px 0px 1px 19px;
+    color: #999;
+    font-size: 13px;
+    font-weight: 600px;
+    margin: 6px 0px 1px 19px;
 }
 
-.log-in:hover ~ .popup-block {
+.log-in:hover .popup-block {
     display: block;
 }
 
+
 .basket {
     display: flex;
-    margin-left: 7px;
+    height: 33px;
+    margin-left: 10px;
     padding-right: 17px;
     border-radius: 18px;
     background-color: #9DB1A5;
@@ -1325,7 +1228,9 @@ body > input[type="radio"]{
 }
 
 .basket span {
-    padding-left: 8px;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 5px;
     padding-top: 7px;
     padding-right: 16px;
     font-weight: 600;
@@ -1333,7 +1238,6 @@ body > input[type="radio"]{
 
 
 .info-wrapper {
-    outline: yellow solid thin;
     display: flex;
     justify-content: flex-end;
     width: 1160px;
@@ -1341,7 +1245,6 @@ body > input[type="radio"]{
 
 .shedule {
     display: flex;
-    outline: yellow solid thin;
     justify-content: flex-start;
     flex-wrap: wrap;
     width: 189px;
@@ -1355,11 +1258,9 @@ body > input[type="radio"]{
     font-weight: bold;
     margin-top: -5px;
     padding: 0px 15px 0px 20px;
-    outline: red solid thin;
 }
 
 .info-wrapper .telephone {
-    outline: green solid thin;
     font-size: 22px;
     line-height: 24px;
     font-weight: bold;
@@ -1373,19 +1274,16 @@ body > input[type="radio"]{
     width: 1160px;
     padding: 0 20px;
     margin: 0 auto;
-    outline: yellow solid thin;
 }
 
 .offers-container {
     display: flex;
-    outline: white solid thin;
     padding-top: 42px;
 }
 
 .offer-card {
     display: flex;
     flex-direction: column;
-    outline: green solid thin;
     width: 560px;
     border-radius: 15px;
     margin-right: 15px;
@@ -1393,20 +1291,17 @@ body > input[type="radio"]{
 }
 
 .offers-container .raspberry {
-    outline: gold solid thin;
     background-image: url("../img/raspberry.jpg");
     background-repeat: no-repeat;
 }
 
 .offers-container .chocolate {
     margin-left: 11px;
-    outline: pink solid thin;
     background-image: url("../img/chocolate.jpg");
     background-repeat: no-repeat;
 }
 
 .offer-title {
-    outline: orange solid thin;
     font-size: 35px;
     line-height: 41px;
     font-weight: bold;
@@ -1415,7 +1310,6 @@ body > input[type="radio"]{
 }
 
 .offer-text {
-    outline: yellow solid thin;
     font-size: 18px;
     line-height: 22px;
     margin: 15px 0 43px 19px;
@@ -1423,7 +1317,6 @@ body > input[type="radio"]{
 }
 
 .offer-btn {
-    outline: red solid thin;
     align-self: flex-end;
     padding: 12px 24px;
     margin-right: 19px;
@@ -1456,16 +1349,14 @@ body > input[type="radio"]{
 }
 
 .popular-goods {
-    outline: yellow solid thin;
     display: flex;
     margin-top: 30px;
-   
+    padding-bottom: 37px;
 }
 
 .photo {
     display: flex;
     flex-direction: column;
-    outline: white solid thin;
 }
 
 .photo .hit {
@@ -1488,12 +1379,11 @@ body > input[type="radio"]{
     position: relative;
     padding-bottom: 30px;
     padding-right: 26px;
-    outline: white solid thin;
 }
 
 .popular-goods-container:hover {
-    background-color: #9BAFA3;
-    border-radius: 5px;
+    background-color: transparent;
+    border-radius: 20px;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -1502,7 +1392,6 @@ body > input[type="radio"]{
 }
 
 .popular-goods-price {
-    outline: white solid thin;
     position: absolute;
     top: 168px;
     color: #fff;
@@ -1517,7 +1406,8 @@ body > input[type="radio"]{
 }
 
 .popular-goods-description {
-    align-self: center;
+    display: flex;
+    justify-content: space-around;
     color: #fff;
     font-size: 16px;
     line-height: 22px;
@@ -1527,18 +1417,18 @@ body > input[type="radio"]{
 
 .popular-goods-description span {
     border-bottom: 1px solid #B1C9BC;
+    display: inline-block;
+    text-align: center;
 }
 
 .popular-btn {
-    outline: pink solid thin;
     position: absolute;
-    bottom: 23px;
-    padding: 9px 14px;
-    margin-left: 40px;
-    letter-spacing: 1px;
+    bottom: 0px;
+    padding: 9px 19px;
+    margin-left: 34px;
     font-size: 18px;
     line-height: 24px;
-    vertical-align: top;
+    font-weight: 500;
     color: #fff;
     text-decoration: none;
     text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
@@ -1574,27 +1464,26 @@ body > input[type="radio"]{
     flex-flow: wrap;
     justify-content: space-around;
     width: 1149px;
-    outline: green solid thin;
     background-image: url("../img/waffle-background.png");
     background-repeat: no-repeat;
     border-radius: 20px;
     padding-bottom: 20px;
     margin-bottom: 39px;
+    margin-top: -37px;
     
 }
 
 .features-title {
-    outline: red solid thin;
     font-size: 24px;
     line-height: 30px;
     font-weight: bold;
     padding-top: 23px;
     padding-left: 19px;
+    margin: 0;
 
 }
 
 .feature-topic {
-    outline: pink solid thin;
     width: 456px;
     font-size: 16px;
     line-height: 22px;
@@ -1604,33 +1493,28 @@ body > input[type="radio"]{
 }
 
 .features img {
-    outline: purple solid thin;
     position: absolute;
     margin-top: -14px;
     margin-left: -55px;
 }
 
 .info-container {
-    outline: yellow solid thin;
     display: flex;
     justify-content: flex-start;
     width: 1160px;
 }
 
 .new-info {
-    outline: green solid thin;
     display: inline-block;
     background-image: url("../img/strawberry-background.png");
     background-repeat: no-repeat;
     width: 540px;
     vertical-align: top;
-   
     margin-right: 22px;
     padding: 4px 0 25px 20px;
 }
 
 .new-info-title {
-    outline: purple solid thin;
     font-size: 16px;
     line-height: 22px;
     font-weight: 600;
@@ -1638,7 +1522,6 @@ body > input[type="radio"]{
 }
 
 .new-info-link {
-    outline: blue solid thin;
     display: inline-block;
     width: 308px;
     font-size: 24px;
@@ -1649,7 +1532,6 @@ body > input[type="radio"]{
 }
 
 .subscribe {
-    outline: yellow solid thin;
     display: inline-block;
     background-image: url("../img/envelope.png");
     background-repeat: no-repeat;
@@ -1659,16 +1541,15 @@ body > input[type="radio"]{
 }
 
 .subscribe-text {
-    outline: skyblue solid thin;
     width: 510px;
     margin-top: 12px;
     margin-left: 6px;
+    margin-bottom: 34px;
     font-size: 16px;
     line-height: 22px;
 }
 
 .subscribe input {
-    outline: brown solid thin;
     width: 352px;
     padding: 12px 0 11px 13px;
     margin: 1px 0 20px 7px;
@@ -1678,7 +1559,6 @@ body > input[type="radio"]{
 }
 
 .subscribe .btn {
-    outline: red solid thin;
     padding: 9px 14px;
     margin-left: 9px;
     letter-spacing: 1px;
@@ -1696,7 +1576,6 @@ body > input[type="radio"]{
 }
 
 .map-block {
-    outline: red solid thin;
     width: auto;
     position: relative;
     margin-top: 40px;
@@ -1707,14 +1586,12 @@ body > input[type="radio"]{
 }
 
 .map-marker {
-    outline: brown solid thin;
     position: absolute;
     top: 171px;
     left: 304px;
 }
 
 .contacts-container {
-    outline: green solid thin;
     position: absolute;
     width: 305px;
     background-color: #fff;
@@ -1724,13 +1601,11 @@ body > input[type="radio"]{
 }
 
 .contacts-wrapper {
-    outline: purple solid thin;
     padding-left: 25px;
     padding-bottom: 42px;
 }
 
 .contacts-container .contacts-text {
-    outline: brown solid thin;
     font-size: 14px;
     line-height: 20px;
     width: 157px;
@@ -1739,7 +1614,6 @@ body > input[type="radio"]{
 }
 
 .contacts-adress {
-    outline: red solid thin;
     width: 260px;
     font-size: 18px;
     line-height: 24px;
@@ -1749,7 +1623,6 @@ body > input[type="radio"]{
 }
 
 .contacts-note {
-    outline: black solid thin;
     font-size: 14px;
     line-height: 20px;
     width: 175px;
@@ -1758,7 +1631,6 @@ body > input[type="radio"]{
 }
 
 .contacts-container .telephone {
-    outline: brown solid thin;
     width: 260px;
     font-size: 18px;
     line-height: 22px;
@@ -1768,7 +1640,6 @@ body > input[type="radio"]{
 }
 
 .comment {
-    outline: yellow solid thin;
     font-size: 14px;
     line-height: 20px;
     width: 160px;
@@ -1777,7 +1648,6 @@ body > input[type="radio"]{
 }
 
 .feedback {
-    outline: green solid thin;
     padding: 9px 31px;
     line-height: 24px;
     color: #fff;
@@ -1815,17 +1685,13 @@ body > input[type="radio"]{
     margin-top: -7px;
     border-top: 1px solid #A9BBB1;
     padding-top: 18px;
-    outline: purple solid thin;
 }
 
 .footer-social {
-    outline: gold solid thin;
     display: flex;
     justify-content: space-around;
-    outline: skyblue solid thin;
     width: 195px;
     padding-top: 12px;
-    margin-left: 9px;
 }
 
 .footer-social a {
@@ -1850,10 +1716,9 @@ body > input[type="radio"]{
 }
 
 .footer-menu {
-    outline: pink solid thin;
     width: 338px;
     max-height: 50px;
-    margin-left: -15px;
+    margin-left: -20px;
     padding-top: 12px;
     display: flex;
     flex-wrap: wrap;
@@ -1861,7 +1726,6 @@ body > input[type="radio"]{
 }
 
 .footer-menu a {
-    outline: yellow solid thin;
     font-size: 13px;
     color: #fff;
     text-decoration: none;
@@ -1879,8 +1743,7 @@ body > input[type="radio"]{
 
 .footer-made-in {
     display: flex;
-    margin-right: 2px;
-    outline: yellow solid thin;
+    margin-right: 11px;
     flex-direction: column;
 }
 
@@ -1890,7 +1753,6 @@ body > input[type="radio"]{
 }
 
 .made-in-text {
-    outline: blue solid thin;
     color: #DDE4E0;
     font-size: 12px;
     line-height: 16px;
